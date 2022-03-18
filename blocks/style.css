@@ -1,0 +1,337 @@
+*{
+   box-sizing: border-box;
+}
+.body{
+    background-color: #E5E5E5;
+ }
+ .btn{
+    background-color: #EB3D35;
+    width: max-content;
+    height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 44px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    transition: background-color .3s linear .3s;
+ }
+ .btn:hover {
+    background-color: #C35B48;
+ }
+ .btn__text{
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 24px;
+    font-family: "Inter";
+    padding-right: 30px;
+ }
+ .button{
+    border: 0;
+    background-color: #EB3D35;
+    width: max-content;
+    height: 60px;
+    padding: 18px 45px;
+    gap: 44px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    transition: background-color .3s linear .3s;
+ }
+ .button:hover {
+    background-color: #C35B48;
+ }
+ 
+ .button__outline{
+    background-color: #ffffff;
+    border: 1px solid #E5E4E1;
+    height: 60px;
+    padding: 18px 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    transition: color .5s linear .5s;
+    margin-right: 20px;
+    color: #051655;
+    font-family: "Inter";
+    font-size: 22px;
+    line-height: 24.42px;
+    transition: background-color .3s linear .3s;
+ }
+  
+ .button__outline:hover{
+    background-color: #051655;
+   color: #ffffff;
+ }
+ .button__text{
+    color: #ffffff;
+    font-family: "Inter";
+    font-size: 22px;
+    line-height: 24.42px;
+ }
+ .form{
+    background-color: #ffffff; 
+  }
+ .form__button{
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+   
+ }
+ .form__input{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 410px;
+    height: 60px;
+    border: 1px solid #E5E4E1;
+    outline: none;
+    transition: border .2s linear .2s;
+ }
+ .form__input:hover{
+    border: 1px solid #EB3D35;
+ }
+ .form__input::before{
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    bottom: 20px;
+    width: 20px;
+    background: url(../images/search-normal.svg);
+    background-repeat: no-repeat;
+ }
+ .form__input_input{
+    padding: 10px, 30px;
+    font-family: "Inter";
+    font-size: 18px;
+    color: #747887;
+    margin: 20px 0px 20px 65px ;
+    border: 0;
+    outline: none;
+ }
+ .form__item-title{
+    font-family: "Inter";
+    font-size: 25px;
+    line-height: 1.2;
+    color: #051655;
+    margin-top: 40px;
+ }
+ .form__list{
+    padding-top: 40px;
+    padding-left: 200px;
+    padding-bottom: 50px;
+ }
+ .header{
+    display: flex;
+    width: 100%;
+    height: 100vh; 
+    background-color: #ffffff; 
+    
+  }
+  .header__image{
+    width: 100%;
+    height: 100%;
+    background: url(../images/background.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+ }
+ .header__info{
+    height: 100vh;
+    margin-left: 100px;
+    margin-top: 70px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    
+ }
+ .header__item{
+    width: 50%;
+    height: auto;
+    
+ }
+ .header__link{
+    text-decoration: none;
+    color: #C35B48;
+    padding-left: 5px;
+    transition: color .3s linear .3s;
+ }
+ .header__link:hover{
+    color: #EB3D35;
+ }
+ .header__subtitle{
+    font-family: "Inter";
+    font-size: 20px;
+    color: #747887;
+    margin-block-start: 0;
+     margin-block-end: 0;
+     margin-top: 10px;
+     margin-bottom: 40px;
+     max-height: 44px;
+     line-height: 23px;
+     max-width: 600px;
+ }
+ .header__text{
+    color: #747887;
+    font-size: 18px;
+    line-height: 19,98px;
+    width: max-content;
+    height: 20px;
+    font-family: "Inter";
+    display: flex;
+    margin-top: auto;
+    margin-bottom: 61px;
+    white-space: pre;
+    
+ }
+ .header__title{
+    font-family: "Inter";
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #051655;
+ }
+ .logo{
+    width: 68px;
+    height: 31px;
+    margin-bottom: 89px;
+ }
+ .radio__border{
+    width: 360px;
+    height: 80px;
+    border: 1px solid #EB3D35;
+    z-index: -2;
+    background-color: #fff;
+ }
+ .radio__buttons{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 20px;
+    
+    
+ }
+ .radio__fake{
+    
+    display: flex;
+    position: absolute;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+   left: 305px;
+   top: 20px;
+   border-radius: 50%;
+   background-color: white;
+   border: 1px solid #E5E4E1;
+   display: block;
+   flex-shrink: 0;
+   
+ }
+ .radio__fake::before{
+    opacity: 0;
+    display: block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #EB3D35;
+    border-radius: 100%;
+    position: absolute;
+    top: 5px;
+    left: 5px;  
+ 
+ }
+ .radio__image{
+    width: 40px;
+    height: 40px;
+    margin:auto;
+    background-color: #fff;
+    padding: 10px;
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+ }
+ .radio__input{
+    line-height: 0;
+    font-size: 0;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    /* display: block; */
+ }
+ .radio__input:checked .radio__fake::before {
+    opacity: 1;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+   left: 305px;
+   top: 20px;
+   border-radius: 50%;
+   background-color: white;
+   border: 1px solid #EB3D35;
+   display: block;
+   flex-shrink: 0;
+   
+ }
+ .radio__item{
+    display: flex;
+    
+    flex-wrap: wrap;
+    position: relative;
+    width: 360px;
+    height: 80px;
+    background-color: #F3F6F9;
+    box-sizing: border-box;
+    
+    border: 1px solid #F3F6F9;
+    
+    padding: 0;
+ }
+ .radio__text{
+    font-family: "Inter";
+    font-size: 20px;
+    line-height: 1.1;
+    color: #051655;
+    margin-left: 90px;
+    margin-top: 29px;
+ }
+ .step__numbers{
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 650px;
+    margin-bottom: 60px;
+ }
+ .step__number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #B3B4BA;
+    margin-right: 100px;
+    background-color: #ffffff;
+    flex-shrink: 0;
+ }
+ .step__progress{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #B3B4BA;
+    z-index: -1;
+    
+ }
+ 
