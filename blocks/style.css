@@ -75,6 +75,11 @@
  .form{
     background-color: #ffffff; 
   }
+  .form__item{
+     display: flex;
+     flex-wrap: wrap;
+     position: relative;
+  }
  .form__button{
     margin-top: 80px;
     display: flex;
@@ -113,7 +118,7 @@
     border: 0;
     outline: none;
  }
- .form__item-title{
+ .form__item_title{
     font-family: "Inter";
     font-size: 25px;
     line-height: 1.2;
@@ -124,6 +129,11 @@
     padding-top: 40px;
     padding-left: 200px;
     padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+ }
+ .form__steps{
+    display: block;
  }
  .header{
     display: flex;
@@ -202,20 +212,12 @@
     height: 31px;
     margin-bottom: 89px;
  }
- .radio__border{
-    width: 360px;
-    height: 80px;
-    border: 1px solid #EB3D35;
-    z-index: -2;
-    background-color: #fff;
- }
  .radio__buttons{
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    gap: 20px;
-    
-    
+   width: 100%;
+   margin-left: -20px;
+   
+   border-collapse: separate;
+   border-spacing: 20px;
  }
  .radio__fake{
     
@@ -231,10 +233,9 @@
    border: 1px solid #E5E4E1;
    display: block;
    flex-shrink: 0;
-   
+   z-index: 4;
  }
  .radio__fake::before{
-    opacity: 0;
     display: block;
     content: '';
     width: 20px;
@@ -242,61 +243,43 @@
     background-color: #EB3D35;
     border-radius: 100%;
     position: absolute;
-    top: 5px;
-    left: 5px;  
- 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+   z-index: 5;
  }
  .radio__image{
-    width: 40px;
-    height: 40px;
-    margin:auto;
+    width: 60px;
+    height: 60px;
+    margin: 0, auto;
     background-color: #fff;
     padding: 10px;
-    margin: 0;
     position: absolute;
     top: 10px;
     left: 10px;
+    z-index: 3;
  }
- .radio__input{
-    line-height: 0;
-    font-size: 0;
-    width: 5px;
-    height: 5px;
-    position: absolute;
-    right: 30px;
-    top: 30px;
-    /* display: block; */
- }
- .radio__input:checked .radio__fake::before {
-    opacity: 1;
-    display: flex;
-    position: absolute;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-   left: 305px;
-   top: 20px;
-   border-radius: 50%;
-   background-color: white;
-   border: 1px solid #EB3D35;
-   display: block;
-   flex-shrink: 0;
-   
- }
+ 
  .radio__item{
-    display: flex;
-    
+   
     flex-wrap: wrap;
+    flex-direction: column;
     position: relative;
     width: 360px;
     height: 80px;
     background-color: #F3F6F9;
     box-sizing: border-box;
-    
     border: 1px solid #F3F6F9;
-    
     padding: 0;
+   
+    
  }
+ .radio__item_border{
+   border: 1px solid #EB3D35;
+   background-color: #fff;
+   box-sizing: border-box;
+   z-index: 2;
+}
  .radio__text{
     font-family: "Inter";
     font-size: 20px;
@@ -304,6 +287,7 @@
     color: #051655;
     margin-left: 90px;
     margin-top: 29px;
+    z-index: 3;
  }
  .step__numbers{
     display: flex;
