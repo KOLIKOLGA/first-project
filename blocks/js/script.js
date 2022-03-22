@@ -11,7 +11,7 @@ console.log(radioItemArray);
 
 radioItemArray.forEach((el, i) => {
    el.addEventListener('click', e => {
-      console.log('tada');
+      // console.log('tada');
       console.log(el.classList);
       console.log(el.dataset.itemid);
 
@@ -22,8 +22,8 @@ radioItemArray.forEach((el, i) => {
 
 
 radioItem.forEach((button, index) => {
-   console.log(button); //выводит каждую кнопку
-   console.log(index); //выводит index каждой кнопки
+   //console.log(button); //выводит каждую кнопку
+   // console.log(index); //выводит index каждой кнопки
    button.addEventListener('click', (e) => {
       console.log(e.target.classList);
       if (radioFakeAfter) {

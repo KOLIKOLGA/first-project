@@ -215,12 +215,15 @@
     height: 31px;
     margin-bottom: 89px;
  }
+ .rdio{
+   cursor: pointer;
+ }
  .radio__buttons{
    display: flex;
+   flex-wrap: wrap;
    width: 100%;
-   margin-left: -20px;
-   border-collapse: separate;
-   border-spacing: 20px;
+   list-style-type: none;
+   padding: 0;
  }
   .radio__box { 
    line-height: 0;
@@ -282,7 +285,7 @@
  }
  
  .radio__item{
-   
+   display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     position: relative;
@@ -291,8 +294,8 @@
     background-color: #F3F6F9;
     box-sizing: border-box;
     border: 1px solid #F3F6F9;
-    padding: 0;
-   
+    margin-bottom: 20px;
+    margin-right: 20px;
     
  }
  .radio__item_border{
