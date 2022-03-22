@@ -3,7 +3,7 @@ const radioItems = document.getElementById('radio__buttons');
 const radioItem = document.querySelectorAll('.radio__item');
 const radioItemBorder = document.querySelectorAll('.radio__item_border');
 const radioFake = document.querySelector('.radio__fake');
-
+const radioFakeAfter = document.querySelector('.radio__fake_after')
 
 console.log(radioItem); // это сами кнопки type = button nodelist
 const radioItemArray = Array.prototype.slice.call(radioItem);
@@ -26,11 +26,8 @@ radioItem.forEach((button, index) => {
    console.log(index); //выводит index каждой кнопки
    button.addEventListener('click', (e) => {
       console.log(e.target.classList);
-      console.log(index);
-      if (e.target = radioFake) {
-         e.target.classList.remove('hidden');
-      } else {
-         e.target.classList.add('hidden');
+      if (radioFakeAfter) {
+         console.log('radio')
       }
-   });
+   })
 }); // перебираем кнопки

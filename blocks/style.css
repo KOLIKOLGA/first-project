@@ -216,19 +216,32 @@
     margin-bottom: 89px;
  }
  .radio__buttons{
+   display: flex;
    width: 100%;
    margin-left: -20px;
-   
    border-collapse: separate;
    border-spacing: 20px;
  }
+  .radio__box { 
+   line-height: 0;
+   font-size: 0;
+   position: absolute;
+   visibility: hidden;
+   opacity: 0;
+ } 
+ .radio__box:checked + .radio__fake_after::before {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+ }
+ 
  .radio__fake_after{
    display: flex;
    position: absolute;
    align-items: center;
    width: 30px;
    height: 30px;
-  left: 305px;
+  right: 25px;
   top: 20px;
   border-radius: 50%;
   background-color: white;
@@ -237,34 +250,24 @@
   flex-shrink: 0;
   z-index: 3;
  }
- .radio__fake{
-   
-    display: flex;
-    position: absolute;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-   left: 305px;
-   top: 20px;
-   border-radius: 50%;
-   background-color: white;
-   border: 1px solid #EB3D35;
-   display: block;
-   flex-shrink: 0;
-   z-index: 4;
- }
- .radio__fake::before{
+ 
+ .radio__fake_after::before{
+    opacity: 0;
     display: block;
     content: '';
-    width: 20px;
-    height: 20px;
-    background-color: #EB3D35;
-    border-radius: 100%;
+    width: 0;
+    height: 0;
+    border: 1px solid #EB3D35;
+    background-color: #ffffff;
+    border-radius: 50%;
+    background-image: url(../images/cirkle.png);
+    background-repeat: no-repeat;
+    background-position: center; 
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);  
-   z-index: 5;
+   z-index: 5;  
  }
  .radio__image{
     width: 60px;
@@ -293,6 +296,7 @@
     
  }
  .radio__item_border{
+   
    border: 1px solid #EB3D35;
    background-color: #fff;
    box-sizing: border-box;
