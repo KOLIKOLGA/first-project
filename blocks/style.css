@@ -296,6 +296,7 @@
     border: 1px solid #F3F6F9;
     margin-bottom: 20px;
     margin-right: 20px;
+    list-style-type: none;
     
  }
  .radio__item_border{
