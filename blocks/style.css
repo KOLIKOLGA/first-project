@@ -74,6 +74,7 @@
  }
  .form{
     background-color: #ffffff; 
+    display: flex;
   }
   .form__item{
      display: flex;
@@ -90,7 +91,7 @@
     display: flex;
     position: relative;
     align-items: center;
-    width: 410px;
+    max-width: 410px;
     height: 60px;
     border: 1px solid #E5E4E1;
     outline: none;
@@ -125,6 +126,7 @@
     color: #051655;
     margin-top: 40px;
  }
+ 
  .form__list{
     padding-top: 40px;
     padding-left: 200px;
@@ -183,7 +185,7 @@
      margin-block-end: 0;
      margin-top: 10px;
      margin-bottom: 40px;
-     max-height: 44px;
+     height: auto;
      line-height: 23px;
      max-width: 600px;
  }
@@ -195,6 +197,7 @@
     height: 20px;
     font-family: "Inter";
     display: flex;
+    flex-wrap: wrap;
     margin-top: auto;
     margin-bottom: 61px;
     white-space: pre;
@@ -224,6 +227,7 @@
    width: 100%;
    list-style-type: none;
    padding: 0;
+   margin: 0;
  }
   .radio__box { 
    line-height: 0;
@@ -237,7 +241,6 @@
     height: 100%;
     opacity: 1;
  }
- 
  .radio__fake_after{
    display: flex;
    position: absolute;
@@ -272,6 +275,7 @@
     transform: translate(-50%, -50%);  
    z-index: 5;  
  }
+ 
  .radio__image{
     width: 60px;
     height: 60px;
@@ -299,12 +303,13 @@
     list-style-type: none;
     
  }
- .radio__item_border{
-   
+ .radio__border_red {
+   width: 360px;
+   height: 80px;
    border: 1px solid #EB3D35;
    background-color: #fff;
    box-sizing: border-box;
-   z-index: 2;
+   z-index: 5;
 }
  .radio__text{
     font-family: "Inter";
@@ -317,6 +322,7 @@
  }
  .step__numbers{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     position: relative;
     max-width: 650px;
@@ -330,7 +336,7 @@
     width: 50px;
     height: 50px;
     border: 2px solid #B3B4BA;
-    margin-right: 100px;
+    /* margin-right: 100px; */
     background-color: #ffffff;
     flex-shrink: 0;
  }
