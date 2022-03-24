@@ -96,6 +96,7 @@
     border: 1px solid #E5E4E1;
     outline: none;
     transition: border .2s linear .2s;
+    cursor: pointer;
  }
  .form__input:hover{
     border: 1px solid #EB3D35;
@@ -261,8 +262,8 @@
     opacity: 0;
     display: block;
     content: '';
-    width: 0;
-    height: 0;
+    width: 30px;
+    height: 30px;
     border: 1px solid #EB3D35;
     background-color: #ffffff;
     border-radius: 50%;
@@ -275,7 +276,6 @@
     transform: translate(-50%, -50%);  
    z-index: 5;  
  }
- 
  .radio__image{
     width: 60px;
     height: 60px;
@@ -304,8 +304,8 @@
     
  }
  .radio__border_red {
-   width: 360px;
-   height: 80px;
+   /* width: 360px;
+   height: 80px; */
    border: 1px solid #EB3D35;
    background-color: #fff;
    box-sizing: border-box;
