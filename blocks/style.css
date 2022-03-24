@@ -314,11 +314,12 @@
  .radio__text{
     font-family: "Inter";
     font-size: 20px;
-    line-height: 1.1;
+    line-height: .9;
     color: #051655;
-    margin-left: 90px;
+    margin-left: 80px;
     margin-top: 25px;
     z-index: 3;
+    word-spacing: -2px;
  }
  .step__numbers{
     display: flex;
