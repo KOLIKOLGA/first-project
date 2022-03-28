@@ -72,6 +72,29 @@
     font-size: 22px;
     line-height: 24.42px;
  }
+ .checkbox__span{
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 1px solid #E5E4E1;
+    border-radius: 5px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+ }
+ .checkbox__span_red{
+   width: 30px;
+   height: 30px;
+   background-color: #EB3D35;
+   border: 1px solid #EB3D35;
+   background-image: url(../images/Vector\ checkbjxActiv5.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+   border-radius: 5px;
+   position: absolute;
+   top: 25px;
+   right: 25px;
+ }
  .form{
     background-color: #ffffff; 
     display: flex;
@@ -219,10 +242,13 @@
     height: 31px;
     margin-bottom: 89px;
  }
+ .no-click {
+   cursor: default;
+}
  .radio{
    cursor: pointer;
  }
- .radio__buttons{
+ .radio__buttons, .checkbox__buttons{
    display: flex;
    flex-wrap: wrap;
    width: 100%;
@@ -288,7 +314,7 @@
     z-index: 3;
  }
  
- .radio__item{
+ .radio__item, .checkbox__item{
    display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -319,7 +345,8 @@
     margin-left: 80px;
     margin-top: 25px;
     z-index: 3;
-    word-spacing: -2px;
+    word-spacing: -1px;
+    letter-spacing: -1px;
  }
  .step__numbers{
     display: flex;

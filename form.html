@@ -67,15 +67,15 @@
 
                       
                   <li class="radio__item radio__border_red" data-itemid="Austin" >                      
-                     <img class="radio__image" src="./images/radio_1.png" alt="img" >                       
+                     <img class="radio__image no-click" src="./images/radio_1.png" alt="img" >                       
                      <label class="radio radio__text">Austin
                         <input type="radio" name="radio-button" class="radio__box" checked value="Austin">
-                        <span class="radio__fake_after radio__pcevdo" data-itemid="Austin1"></span>
+                        <span class="radio__fake_after" data-itemid="Austin1"></span>
                      </label>
                   </li>
                 
                   <li class="radio__item" data-itemid="Dallas" >
-                        <img class="radio__image" src="./images/radio_2.png" alt="img" >                          
+                        <img class="radio__image no-click" src="./images/radio_2.png" alt="img" >                          
                         <label class="radio radio__text">Dallas
                            <input type="radio" name="radio-button" class="radio__box" value="Dallas">
                         
@@ -84,7 +84,7 @@
                    </li>
                 
                      <li class="radio__item " data-itemid="San Antonio" >
-                        <img class="radio__image" src="./images/radio_3.png" alt="img" >                       
+                        <img class="radio__image no-click" src="./images/radio_3.png" alt="img" >                       
                          <label class="radio radio__text">San Antonio
                            <input type="radio" name="radio-button" class="radio__box" value="San Antonio">
                         
@@ -95,7 +95,7 @@
                
                      
                         <li class="radio__item "  data-itemid="Houston" > 
-                           <img class="radio__image" src="./images/radio_4.png" alt="img" >                       
+                           <img class="radio__image no-click" src="./images/radio_4.png" alt="img" >                       
                            <label class="radio radio__text">Houston
                               <input type="radio" name="radio-button" class="radio__box" value="Houston">
                           
@@ -104,7 +104,7 @@
                          </li>
                     
                         <li class="radio__item " data-itemid="New York" >
-                           <img class="radio__image" src="./images/radio_5.png" alt="img" >                
+                           <img class="radio__image no-click" src="./images/radio_5.png" alt="img" >                
                            <label class="radio radio__text" >New York 
                               <input type="radio" name="radio-button" class="radio__box" value="New York ">
                           
@@ -113,7 +113,7 @@
                          </li>
                       
                      <li class="radio__item "  data-itemid="Los Angeles" > 
-                        <img class="radio__image" src="./images/radio_6.png" alt="img" >
+                        <img class="radio__image no-click" src="./images/radio_6.png" alt="img" >
                         <label class="radio radio__text" >Los Angeles
                            <input type="radio" name="radio-button" class="radio__box" value="Los Angeles">
                         
@@ -135,54 +135,89 @@
                      These will be kept private from other users but help us find relevant matches.</div>
                     <div class="form__item">
                      <h3 class="form__item_title">Select Objectives</h3>
-                       <ul class="radio__buttons">
-                          <li class="radio__item ">
-                           <img src="./images/image 1 step 2.png" class="radio__image" alt="#">
-                           <span class="radio radio__text">Brainstorm with peers</span>
+                       <ul class="checkbox__buttons" id="checkbox__buttons">
+                          <li class="checkbox__item ">
+                           <img src="./images/image 1 step 2.png" class="radio__image no-click" alt="#">
+                           <label class="radio radio__text">Brainstorm with peers
+                              <span class="checkbox__span"></span>
+                           </label>
                           </li>
-                          <li class="radio__item ">
-                           <img src="./images/image 2 step 2.png" class="radio__image" alt="#">
-                           <span class="radio radio__text">Grow your team</span>
+                          <li class="checkbox__item ">
+                           <img src="./images/image 2 step 2.png" class="radio__image no-click" alt="#">
+                           
+                           <label class="radio radio__text">Grow your team
+                              <span class="checkbox__span"></span>
+                           </label>
                         </li>
-                        <li class="radio__item ">
-                           <img src="./images/image 3 step 2.png" class="radio__image" alt="#">
-                           <span class="radio radio__text">Start a company</span>
+                        <li class="checkbox__item ">
+                           <img src="./images/image 3 step 2.png" class="radio__image no-click" alt="#">
+                           
+                           <label class="radio radio__text">Start a company
+                              <span class="checkbox__span"></span>
+                           </label>
                         </li>
-                        <li class="radio__item ">
-                           <img src="./images/image 4 step 2.png" class="radio__image" alt="#">
-                           <span class="radio radio__text">Explore other companies</span>
+                        <li class="checkbox__item ">
+                           <img src="./images/image 4 step 2.png" class="radio__image no-click" alt="#">
+                           
+                           <label class="radio radio__text">Explore other companies
+                              <span class="checkbox__span"></span>
+                           </label>
                         </li>
-                        <li class="radio__item ">
-                           <img src="./images/image 5 step 2.png" class="radio__image" alt="#">
-                           <span class="radio radio__text">Business development</span>
+                        <li class="checkbox__item ">
+                           <img src="./images/image 5 step 2.png" class="radio__image no-click" alt="#">
+                          
+                           <label class="radio radio__text">Business development
+                              <span class="checkbox__span"></span>
+                           </label>
                         </li>
-                        <li class="radio__item ">
-                           <img src="./images/image 6 step 2.png" class="radio__image" alt="#">
-                           <span class="radio radio__text">Invest</span>
+                        <li class="checkbox__item ">
+                           <img src="./images/image 6 step 2.png" class="radio__image no-click" alt="#">
+                           
+                           <label class="radio radio__text">Invest
+                              <span class="checkbox__span"></span>
+                           </label>
                         </li>
-                        <li class="radio__item ">
-                           <img src="./images/image 7 step 2.png" class="radio__image" alt="#">
-                           <span class="radio radio__text">Explore new projects</span>
+                        <li class="checkbox__item ">
+                           <img src="./images/image 7 step 2.png" class="radio__image no-click" alt="#">
+                          
+                           <label class="radio radio__text">Explore new projects
+                              <span class="checkbox__span"></span>
+                           </label>
                         </li>
-                        <li class="radio__item ">
-                           <img src="./images/image 8 step 2.png" class="radio__image" alt="#">
-                           <span class="radio radio__text">Mentor others</span>
+                        <li class="checkbox__item ">
+                           <img src="./images/image 8 step 2.png" class="radio__image no-click" alt="#">
+                          
+                           <label class="radio radio__text">Mentor others
+                              <span class="checkbox__span"></span>
+                           </label>
                         </li>
-                        <li class="radio__item ">
-                           <img src="./images/image 9 step 2.png" class="radio__image" alt="#">
-                           <span class="radio radio__text">Organize events</span>
+                        <li class="checkbox__item ">
+                           <img src="./images/image 9 step 2.png" class="radio__image no-click" alt="#">
+                          
+                           <label class="radio radio__text">Organize events
+                              <span class="checkbox__span"></span>
+                           </label>
                         </li>
-                        <li class="radio__item ">
-                           <img src="./images/image 10 step 2.png" class="radio__image" alt="#">
-                           <span class="radio radio__text">Raise funding</span>
+                        <li class="checkbox__item ">
+                           <img src="./images/image 10 step 2.png" class="radio__image no-click" alt="#">
+                          
+                           <label class="radio radio__text">Raise funding
+                              <span class="checkbox__span"></span>
+                           </label>
                         </li>
-                        <li class="radio__item ">
-                           <img src="./images/image 11 step 2.png" class="radio__image" alt="#">
-                           <span class="radio radio__text">Find a cofounder</span>
+                        <li class="checkbox__item ">
+                           <img src="./images/image 11 step 2.png" class="radio__image no-click" alt="#">
+                           
+                           <label class="radio radio__text">Find a cofounder
+                              <span class="checkbox__span"></span>
+                           </label>
                         </li>
-                        <li class="radio__item ">
-                           <img src="./images/image 12 step 2.png" class="radio__image" alt="#">
-                           <span class="radio radio__text">Meet intresting people</span>     
+                        <li class="checkbox__item">
+                           <img src="./images/image 12 step 2.png" class="radio__image no-click" alt="#">
+                          
+                           <label class="radio radio__text">Meet intresting people
+                              <span class="checkbox__span"></span>
+                           </label>     
                         </li>
 
                        </ul>
