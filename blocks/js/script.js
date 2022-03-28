@@ -7,7 +7,7 @@ const checkboxSpan = document.querySelectorAll('.checkbox__span');
 const radioItemArray = Array.prototype.slice.call(radioItem); // перевели нодлист в Array
 const checkboxButtonArray = Array.prototype.slice.call(checkboxButton);
 const checkboxSpanArray = Array.prototype.slice.call(checkboxSpan);
-console.log(checkboxSpan)
+console.log(checkboxSpan);
 console.log(checkboxButtons);
 console.log(checkboxButton);
 
