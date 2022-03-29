@@ -1,5 +1,7 @@
 *{
    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
 }
 .body{
     background-color: #E5E5E5;
@@ -95,6 +97,25 @@
    top: 25px;
    right: 25px;
  }
+ .interests__text{
+    font-size: 18px;
+    color: #747887;
+    font-family: "Inter";
+    padding: 10px 24px;
+    border: 1px solid #E5E4E1;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    line-height: 150%;
+    list-style-type: none;
+    gap: 10px;
+ }
+ .Interest__title{
+    margin-bottom: 20px;
+ }
+ li{
+    margin-bottom: 20px;
+    margin-top: 10px;
+ }
  .form{
     background-color: #ffffff; 
     display: flex;
@@ -114,12 +135,13 @@
     display: flex;
     position: relative;
     align-items: center;
-    max-width: 410px;
+    width: 460px;
     height: 60px;
     border: 1px solid #E5E4E1;
     outline: none;
     transition: border .2s linear .2s;
     cursor: pointer;
+    margin-top: 10px;
  }
  .form__input:hover{
     border: 1px solid #EB3D35;
@@ -134,10 +156,39 @@
     background: url(../images/search-normal.svg);
     background-repeat: no-repeat;
  }
+ .form__input_step31{
+    min-width: 460px;
+    max-width: 720px;
+    margin-top: 24px;
+ }
+ .form__input_step32{
+    min-width: 460px;
+    max-width: 720px;
+ }
+ .form__input_step31::before{
+   content: '';
+   position: absolute;
+   left: 20px;
+   top: 20px;
+   bottom: 20px;
+   width: 20px;
+   background: url(../images/Frame31.svg);
+   background-repeat: no-repeat;
+}.form__input_step32::before{
+   content: '';
+   position: absolute;
+   left: 20px;
+   top: 20px;
+   bottom: 20px;
+   width: 20px;
+   background: url(../images/2332.svg);
+   background-repeat: no-repeat;
+}
  .form__input_input{
     padding: 10px, 30px;
     font-family: "Inter";
     font-size: 18px;
+    width: 100%;
     color: #747887;
     margin: 20px 0px 20px 65px ;
     border: 0;
@@ -150,7 +201,10 @@
     color: #051655;
     margin-top: 40px;
  }
- 
+ .form__item_title-3{
+    margin-top: 0;
+   
+ }
  .form__list{
     padding-top: 40px;
     padding-left: 200px;
@@ -160,6 +214,36 @@
  }
  .form__steps{
     display: block;
+ }
+ .file__upload {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    
+    
+ }
+ .file__item{
+    display: flex;
+    width: 360px;
+    height: 360px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F3F6F9;
+    border: 2px dashed #051655;
+    margin-right: 40px;
+ }
+ .file__item_text{
+    margin-top: 35px;
+    font-size: 20px;
+    font-family: 'Inter';
+    line-height: 1.1;
+    color: #051655;
+    cursor: pointer;
+ }
+ .file__input{
+    display: none;
+   
  }
  .header{
     display: flex;
@@ -230,12 +314,17 @@
  .header__title{
     font-family: "Inter";
     font-size: 50px;
+    line-height: 1.1;
     margin-bottom: 0;
     margin-top: 0;
     color: #051655;
  }
  .hidden{
-    opacity: 0;
+   line-height: 0;
+   font-size: 0;
+   position: absolute;
+   visibility: hidden;
+   opacity: 0;
  }
  .logo{
     width: 68px;
@@ -248,7 +337,9 @@
  .radio{
    cursor: pointer;
  }
- .radio__buttons, .checkbox__buttons{
+ .radio__buttons,
+ .checkbox__buttons,
+ .interests {
    display: flex;
    flex-wrap: wrap;
    width: 100%;
@@ -347,6 +438,12 @@
     z-index: 3;
     word-spacing: -1px;
     letter-spacing: -1px;
+ }
+ .interests__text{
+    font-family: 'Inter';
+    font-size: 18px;
+    line-height: 1.1;
+    color: #747887;
  }
  .step__numbers{
     display: flex;
