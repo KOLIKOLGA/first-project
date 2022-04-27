@@ -1,0 +1,39 @@
+
+
+
+
+
+
+
+
+
+.step__numbers{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: relative;
+   max-width: 650px;
+   margin-bottom: 60px;
+}
+.step__number{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 100%;
+   width: 50px;
+   height: 50px;
+   border: 2px solid #B3B4BA;
+   /* margin-right: 100px; */
+   background-color: #ffffff;
+   flex-shrink: 0;
+}
+.step__progress{
+   position: absolute;
+   top: 50%;
+   left: 0;
+   right: 0;
+   height: 2px;
+   background-color: #B3B4BA;
+   z-index: -1;
+   
+}

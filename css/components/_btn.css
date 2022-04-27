@@ -1,0 +1,23 @@
+.btn{
+   background-color: #EB3D35;
+   width: max-content;
+   height: 60px;
+   padding-left: 30px;
+   padding-right: 30px;
+   gap: 44px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   text-decoration: none;
+   transition: background-color .3s linear .3s;
+}
+.btn:hover {
+   background-color: #C35B48;
+}
+.btn__text{
+   color: #ffffff;
+   font-size: 22px;
+   line-height: 24px;
+   font-family: "Inter";
+   padding-right: 30px;
+}

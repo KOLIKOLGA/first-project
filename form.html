@@ -4,11 +4,12 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="./blocks/vendor/normalize.css">
-   <link rel="stylesheet" href="./blocks/vendor/fonts/font.css">
-   <link rel="stylesheet" href="./blocks/style.css">
-   <script src="./blocks/js/script.js" defer></script>
-   <script src="" defer></script>
+   
+   <link rel="stylesheet" href="./css/style.css">
+   <script src="./js/script.js" defer></script>
+   <script src="./js/radio.js" defer></script>
+   <script src="./js/checkbox.js" defer></script>
+   <script src="./js/business.js" defer></script>
    <title>Form</title>
 </head>
 <body class="form">
@@ -66,7 +67,7 @@
                      <img class="radio__image no-click" src="./images/radio_1.png" alt="img" >                       
                      <label class="radio radio__text">Austin
                         <input type="radio" name="radio-button" class="radio__box" checked value="Austin">
-                        <span class="radio__fake_after" data-itemid="Austin1"></span>
+                        <span class="radio__fake_after"></span>
                      </label>
                   </li>
                   <li class="radio__item" data-itemid="Dallas" >
@@ -117,74 +118,74 @@
                        <ul class="checkbox__buttons" id="checkbox__buttons">
                           <li class="checkbox__item ">
                            <img src="./images/image 1 step 2.png" class="radio__image no-click" alt="#">
-                           <label class="radio radio__text">Brainstorm with peers
-                              <span class="checkbox__span"></span>
+                           <label class=" checkbox__text">Brainstorm with peers
+                              <span class="radio checkbox__span"></span>
                            </label>
                           </li>
                           <li class="checkbox__item ">
                            <img src="./images/image 2 step 2.png" class="radio__image no-click" alt="#">
-                           <label class="radio radio__text">Grow your team
-                              <span class="checkbox__span"></span>
+                           <label class=" checkbox__text">Grow your team
+                              <span class="radio checkbox__span"></span>
                            </label>
                         </li>
                         <li class="checkbox__item ">
                            <img src="./images/image 3 step 2.png" class="radio__image no-click" alt="#">
-                           <label class="radio radio__text">Start a company
-                              <span class="checkbox__span"></span>
+                           <label class=" checkbox__text">Start a company
+                              <span class="radio checkbox__span"></span>
                            </label>
                         </li>
                         <li class="checkbox__item ">
                            <img src="./images/image 4 step 2.png" class="radio__image no-click" alt="#">
-                           <label class="radio radio__text">Explore other companies
-                              <span class="checkbox__span"></span>
+                           <label class=" checkbox__text">Explore other companies
+                              <span class="radio checkbox__span"></span>
                            </label>
                         </li>
                         <li class="checkbox__item ">
                            <img src="./images/image 5 step 2.png" class="radio__image no-click" alt="#">
-                           <label class="radio radio__text">Business development
-                              <span class="checkbox__span"></span>
+                           <label class=" checkbox__text">Business development
+                              <span class="radio checkbox__span"></span>
                            </label>
                         </li>
                         <li class="checkbox__item ">
                            <img src="./images/image 6 step 2.png" class="radio__image no-click" alt="#">
-                           <label class="radio radio__text">Invest
-                              <span class="checkbox__span"></span>
+                           <label class=" checkbox__text">Invest
+                              <span class="radio checkbox__span"></span>
                            </label>
                         </li>
                         <li class="checkbox__item ">
                            <img src="./images/image 7 step 2.png" class="radio__image no-click" alt="#">
-                           <label class="radio radio__text">Explore new projects
-                              <span class="checkbox__span"></span>
+                           <label class=" checkbox__text">Explore new projects
+                              <span class="radio checkbox__span"></span>
                            </label>
                         </li>
                         <li class="checkbox__item ">
                            <img src="./images/image 8 step 2.png" class="radio__image no-click" alt="#">
-                           <label class="radio radio__text">Mentor others
-                              <span class="checkbox__span"></span>
+                           <label class=" checkbox__text">Mentor others
+                              <span class="radio checkbox__span"></span>
                            </label>
                         </li>
                         <li class="checkbox__item ">
                            <img src="./images/image 9 step 2.png" class="radio__image no-click" alt="#">
-                           <label class="radio radio__text">Organize events
-                              <span class="checkbox__span"></span>
+                           <label class=" checkbox__text">Organize events
+                              <span class="radio checkbox__span"></span>
                            </label>
                         </li>
                         <li class="checkbox__item ">
                            <img src="./images/image 10 step 2.png" class="radio__image no-click" alt="#">                       
-                           <label class="radio radio__text">Raise funding
-                              <span class="checkbox__span"></span>
+                           <label class=" checkbox__text">Raise funding
+                              <span class="radio checkbox__span"></span>
                            </label>
                         </li>
                         <li class="checkbox__item ">
                            <img src="./images/image 11 step 2.png" class="radio__image no-click" alt="#">
-                           <label class="radio radio__text">Find a cofounder
-                              <span class="checkbox__span"></span>
+                           <label class=" checkbox__text">Find a cofounder
+                              <span class="radio checkbox__span"></span>
                            </label>
                         </li>
                         <li class="checkbox__item">
                            <img src="./images/image 12 step 2.png" class="radio__image no-click" alt="#">                       
-                           <label class="radio radio__text">Meet intresting people
-                              <span class="checkbox__span"></span>
+                           <label class=" checkbox__text">Meet intresting people
+                              <span class="radio checkbox__span"></span>
                            </label>     
                         </li>
                      </ul>
@@ -229,34 +230,27 @@
                   <div class="form__item">
                     
                      <div class="form__item_title Interest__title">Business</div>
-                        <ul class="interests">
-                        <li>
-                          <label class="radio interests__text">Enterpreneurship
-                             <input type="checkbox" class="radio__box"></label>
+                        <ul class="business-interests">
+                        <li class="business-interests__item">
+                          <div class="business-interests__text">Enterpreneurship</div>
                         </li>
-                        <li>
-                          <label class="radio interests__text">Marketing
-                             <input type="checkbox" class="radio__box"></label>
+                        <li class="business-interests__item">
+                          <div class="business-interests__text">Marketing</div>
                         </li>
-                        <li>
-                          <label class="radio interests__text">Sales
-                             <input type="checkbox" class="radio__box"></label>
+                        <li class="business-interests__item">
+                          <div class="business-interests__text">Sales</div>
                         </li>
-                        <li>
-                          <label class="radio interests__text">Consulting
-                             <input type="checkbox" class="radio__box"></label>
+                        <li class="business-interests__item">
+                          <div class="business-interests__text">Consulting</div>
                         </li>
-                        <li>
-                          <label class="radio interests__text">E-commerce
-                             <input type="checkbox" class="radio__box"></label>
+                        <li class="business-interests__item">
+                          <div class="business-interests__text">E-commerce</div>
                         </li>
-                        <li>
-                          <label class="radio interests__text">Retail
-                             <input type="checkbox" class="radio__box"></label>
+                        <li class="business-interests__item">
+                          <div class="business-interests__text">Retail</div>
                         </li>
-                        <li>
-                          <label class="radio interests__text">Real Estate
-                             <input type="checkbox" class="radio__box"></label>
+                        <li class="business-interests__item">
+                          <div class="business-interests__text">Real Estate</div>
                         </li>
                      </ul>
                     
@@ -265,29 +259,23 @@
                   <div class="form__item">
                      <div class="form__item_title Interest__title">Investing & Finance </div>
                         <ul class="interests">
-                           <li>
-                             <label class="radio interests__text">Angle Investing
-                                <input type="checkbox" class="radio__box"></label>
+                           <li class="interests__item">
+                             <div class="interests__text">Angle Investing</div>
                            </li>
-                           <li>
-                             <label class="radio interests__text">Crypto
-                                <input type="checkbox" class="radio__box"></label>
+                           <li class="interests__item">
+                             <div class="interests__text">Crypto</div>
                            </li>
-                           <li>
-                             <label class="radio interests__text">Quant Finance
-                                <input type="checkbox" class="radio__box"></label>
+                           <li class="interests__item">
+                             <div class="interests__text">Quant Finance</div>
                            </li>
-                           <li>
-                             <label class="radio interests__text">Venture Capital
-                                <input type="checkbox" class="radio__box"></label>
+                           <li class="interests__item">
+                             <div class="interests__text">Venture Capital</div>
                            </li>
-                           <li>
-                             <label class="radio interests__text">Investment Banking
-                                <input type="checkbox" class="radio__box"></label>
+                           <li class="interests__item">
+                             <div class="interests__text">Investment Banking</div>
                            </li>
-                           <li>
-                             <label class="radio interests__text">Economics
-                                <input type="checkbox" class="radio__box"></label>
+                           <li class="interests__item">
+                             <div class="interests__text">Economics</div>
                            </li>
                         </ul>
                     
@@ -295,53 +283,41 @@
                   <div class="form__item">
                      <div class="form__item_title Interest__title">Lifestyle</div>
                      <ul class="interests">
-                        <li>
-                          <label class="radio interests__text">Travel
-                             <input type="checkbox" class="radio__box"></label>
+                        <li class="interests__item">
+                          <div class="interests__text">Travel></div>
                         </li>
-                        <li>
-                          <label class="radio interests__text">Fitness
-                             <input type="checkbox" class="radio__box"></label>
+                        <li class="interests__item">
+                          <div class="interests__text">Fitness</div>
                         </li>
-                        <li>
-                          <label class="radio interests__text">Food
-                             <input type="checkbox" class="radio__box"></label>
+                        <li class="interests__item">
+                          <div class="interests__text">Food</div>
                         </li>
-                        <li>
-                          <label class="radio interests__text">Gaming
-                             <input type="checkbox" class="radio__box"></label>
+                        <li class="interests__item">
+                          <div class="interests__text">Gaming</div>
                         </li>
-                        <li>
-                          <label class="radio interests__text">Writing
-                             <input type="checkbox" class="radio__box"></label>
+                        <li class="interests__item">
+                          <div class="interests__text">Writing</div>
                         </li>
-                        <li>
-                          <label class="radio interests__text">Reading
-                             <input type="checkbox" class="radio__box"></label>
+                        <li class="interests__item">
+                          <div class="interests__text">Reading</div>
                         </li>
-                        <li> 
-                           <label class="radio interests__text">Dinner Parties
-                              <input type="checkbox" class="radio__box"></label>
+                        <li class="interests__item"> 
+                           <div class="interests__text">Dinner Parties</div>
                          </li>
-                         <li>
-                           <label class="radio interests__text">Poker
-                              <input type="checkbox" class="radio__box"></label>
+                         <li class="interests__item">
+                           <div class="interests__text">Poker</div>
                          </li>
-                         <li>
-                           <label class="radio interests__text">Chess
-                              <input type="checkbox" class="radio__box"></label>
+                         <li class="interests__item">
+                           <div class="interests__text">Chess</div>
                          </li>
-                         <li>
-                           <label class="radio interests__text">Cooking
-                              <input type="checkbox" class="radio__box"></label>
+                         <li class="interests__item">
+                           <div class="interests__text">Cooking</div>
                          </li>
-                         <li>
-                           <label class="radio interests__text">Wellness
-                              <input type="checkbox" class="radio__box"></label>
+                         <li class="interests__item">
+                           <div class="interests__text">Wellness</div>
                          </li>
-                         <li>
-                           <label class="radio interests__text">Parenting
-                              <input type="checkbox" class="radio__box"></label>
+                         <li class="interests__item">
+                           <div class="interests__text">Parenting</div>
                          </li>
                      </ul>
                   </div>

@@ -1,0 +1,21 @@
+.flex {
+   display: flex;
+}
+.hidden{
+   line-height: 0;
+   font-size: 0;
+   position: absolute;
+   visibility: hidden;
+   opacity: 0;
+}
+ .logo{
+   width: 68px;
+   height: 31px;
+   margin-bottom: 89px;
+}
+.no-click {
+  cursor: default;
+}
+.radio{
+   cursor: pointer;
+ }

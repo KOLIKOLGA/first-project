@@ -1,0 +1,99 @@
+.form{
+   background-color: #ffffff; 
+   display: flex;
+ }
+ .form__item{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+ }
+.form__button{
+   margin-top: 80px;
+   display: flex;
+   flex-wrap: wrap;
+  
+}
+.form__input{
+   display: flex;
+   position: relative;
+   align-items: center;
+   width: 460px;
+   height: 60px;
+   border: 1px solid #E5E4E1;
+   outline: none;
+   transition: border .2s linear .2s;
+   cursor: pointer;
+   margin-top: 10px;
+}
+.form__input:hover{
+   border: 1px solid #EB3D35;
+}
+.form__input::before{
+   content: '';
+   position: absolute;
+   left: 20px;
+   top: 20px;
+   bottom: 20px;
+   width: 20px;
+   background: url(../../images/search-normal.svg);
+   background-repeat: no-repeat;
+}
+.form__input_step31{
+   min-width: 460px;
+   max-width: 720px;
+   margin-top: 24px;
+}
+.form__input_step32{
+   min-width: 460px;
+   max-width: 720px;
+}
+.form__input_step31::before{
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  bottom: 20px;
+  width: 20px;
+  background: url(../../images/Frame31.svg);
+  background-repeat: no-repeat;
+}.form__input_step32::before{
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  bottom: 20px;
+  width: 20px;
+  background: url(../../images/2332.svg);
+  background-repeat: no-repeat;
+}
+.form__input_input{
+   padding: 10px, 30px;
+   font-family: "Inter";
+   font-size: 18px;
+   width: 100%;
+   color: #747887;
+   margin: 20px 0px 20px 65px ;
+   border: 0;
+   outline: none;
+}
+.form__item_title{
+   font-family: "Inter";
+   font-size: 25px;
+   line-height: 1.2;
+   color: #051655;
+   margin-top: 40px;
+}
+.form__item_title-3{
+   margin-top: 0;
+  
+}
+.form__list{
+   padding-top: 40px;
+   padding-left: 200px;
+   padding-bottom: 50px;
+   display: flex;
+   flex-direction: column;
+}
+.form__steps{
+   display: block;
+}

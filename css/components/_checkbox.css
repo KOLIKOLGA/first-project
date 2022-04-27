@@ -1,0 +1,64 @@
+.checkbox__span{
+   width: 30px;
+   height: 30px;
+   background-color: #ffffff;
+   border: 1px solid #E5E4E1;
+   border-radius: 5px;
+   position: absolute;
+   top: 25px;
+   right: 25px;
+}
+.checkbox__span_red{
+  width: 30px;
+  height: 30px;
+  background-color: #EB3D35;
+  border: 1px solid #EB3D35;
+  background-image: url(../../images/Vector\ checkbjxActiv5.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+.checkbox__buttons {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+}
+.checkbox__box { 
+   line-height: 0;
+   font-size: 0;
+   position: absolute;
+   visibility: hidden;
+   opacity: 0;
+}
+.checkbox__item{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   position: relative;
+   width: 360px;
+   height: 80px;
+   background-color: #F3F6F9;
+   box-sizing: border-box;
+   border: 1px solid #F3F6F9;
+   margin-bottom: 20px;
+   margin-right: 20px;
+   list-style-type: none;
+    
+}
+.checkbox__text {
+   font-family: "Inter";
+   font-size: 20px;
+   line-height: .9;
+   color: #051655;
+   margin-left: 80px;
+   margin-top: 25px;
+   z-index: 3;
+   word-spacing: -1px;
+   letter-spacing: -1px;
+}

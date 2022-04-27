@@ -1,0 +1,47 @@
+.business-interests__item,
+.interests__item{
+   list-style-type: none;
+ }
+ .business-interests__text,
+ .interests__text{
+    display: block;
+    font-size: 18px;
+    color: #747887;
+    font-family: "Inter";
+    padding: 10px 24px;
+    border: 1px solid #E5E4E1;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    line-height: 150%;
+    
+    gap: 10px;
+    cursor: pointer;
+ }
+ .Interest__title{
+    margin-bottom: 20px;
+ }
+ .business-interests__text_checked,
+ .interests__text_checked {
+   display: block;
+   font-size: 18px;
+   border:1px solid #051655;
+   color: #051655;
+   font-family: "Inter";
+   padding: 10px 24px;
+   margin-right: 10px;
+   margin-bottom: 10px;
+   line-height: 150%;
+  
+   gap: 10px;
+   cursor: pointer;
+   z-index: 5;
+ }
+ .business-interests,
+ .interests {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+ }
