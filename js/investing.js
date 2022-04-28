@@ -1,5 +1,5 @@
-const liveStyle = () => {
-   const interestsCheckBox = document.querySelectorAll('.interests__text');
+const investing = () => {
+   const InvestingInterestsText = document.querySelectorAll('.Investing-interests__text');
 
    const activeElems1 = [];
 
@@ -13,8 +13,8 @@ const liveStyle = () => {
          activeElems1.push(this);
       }
    }
-   for (let e of interestsCheckBox) {
+   for (let e of InvestingInterestsText) {
       e.addEventListener(`click`, activeElemClick1);
    };
-};
-liveStyle();
+}
+investing()
