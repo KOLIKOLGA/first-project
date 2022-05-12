@@ -90,6 +90,14 @@
     z-index: 0;
     
  }
+ .radio__border {
+  width: 360px;
+  height: 80px;
+  border: 1px solid #EB3D35;
+  background-color: #fff;
+  box-sizing: border-box;
+ 
+}
  .radio__border_red {
    width: 360px;
    height: 80px;

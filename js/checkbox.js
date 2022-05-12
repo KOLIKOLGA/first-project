@@ -8,10 +8,10 @@ const checkbox = () => {
    function activeElemClick() {
       let index = activeElems.indexOf(this);
       if (index >= 0) { // Элемент был активным
-         this.classList.remove("radio__border_red");
+         this.classList.remove("radio__border");
          activeElems.splice(index, 1);
       } else if (activeElems.length < 3) { // Элемент не был активным и можно добавить
-         this.classList.add("radio__border_red");
+         this.classList.add("radio__border");
          activeElems.push(this);
       }
    }
