@@ -1,12 +1,7 @@
 const checkbox = () => {
-   const checkboxButtons = document.getElementById('checkbox__buttons');
    const checkboxButton = document.querySelectorAll('.checkbox__item');
    const checkboxSpan = document.querySelectorAll('.checkbox__span');
 
-
-   console.log(checkboxSpan);
-   console.log(checkboxButtons);
-   console.log(checkboxButton);
 
    const activeElems = [];
 

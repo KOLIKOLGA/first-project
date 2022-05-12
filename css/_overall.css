@@ -15,6 +15,7 @@
 }
 .no-click {
   cursor: default;
+  pointer-events: none;
 }
 .radio{
    cursor: pointer;
