@@ -3,12 +3,12 @@ const checkbox = () => {
    const checkboxSpan = document.querySelectorAll('.checkbox__span');
    const checkboxButton = document.querySelectorAll('input[type="checkbox"]');
    const checkBox = document.getElementById('input[type="checkbox"]');
-   console.log(checkboxButton);
+
 
 
    checkboxButton.forEach((item) => {
       item.addEventListener('click', () => {
-         console.log(item)
+
       })
    })
 
@@ -41,7 +41,7 @@ const checkbox = () => {
    }
    for (let e of checkboxButton) {
       e.addEventListener(`click`, activeElemClick1);
-      console.log(e.checked)
+
    };
 
 };
