@@ -20,6 +20,9 @@
   position: absolute;
   top: 25px;
   right: 25px;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0;
 }
 .checkbox__buttons {
    display: flex;
@@ -30,11 +33,20 @@
    margin: 0;
 }
 .checkbox__box { 
-   line-height: 0;
-   font-size: 0;
+   width: 30px;
+   height: 30px;
    position: absolute;
-   visibility: hidden;
+   right: 25px;
+   top: 25px;
+   z-index: 10;
    opacity: 0;
+   cursor: pointer;
+}
+.checkbox__box:checked ~ .radio__border_red{
+   opacity: 1;
+}
+.checkbox__box:checked ~ .checkbox__span_red{
+   opacity: 1;
 }
 .checkbox__item{
    display: flex;
@@ -61,4 +73,5 @@
    z-index: 3;
    word-spacing: -1px;
    letter-spacing: -1px;
+   cursor: pointer;
 }
