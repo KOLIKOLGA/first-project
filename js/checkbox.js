@@ -5,13 +5,6 @@ const checkbox = () => {
    const checkBox = document.getElementById('input[type="checkbox"]');
 
 
-
-   checkboxButton.forEach((item) => {
-      item.addEventListener('click', () => {
-
-      })
-   })
-
    let f = document;
    f.onchange = () => {
       let n = f.querySelectorAll('[type="checkbox"]'),
@@ -25,24 +18,6 @@ const checkbox = () => {
             n[j].disabled = false; // если выделить менее трёх галочек, то disabled снимается со всех чекбоксов
          }
    }
-
-   const activeElems1 = [];
-
-
-   function activeElemClick1() {
-      let index = activeElems1.indexOf(this);
-      if (index >= 0) { // Элемент был активным
-         this.checked = false;
-         activeElems1.splice(index, 1);
-      } else if (activeElems1.length < 3) { // Элемент не был активным и можно добавить
-         this.checked = true;
-         activeElems1.push(this);
-      }
-   }
-   for (let e of checkboxButton) {
-      e.addEventListener(`click`, activeElemClick1);
-
-   };
 
 };
 
