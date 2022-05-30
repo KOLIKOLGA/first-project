@@ -10,6 +10,7 @@
    justify-content: space-around;
    align-items: center;
    text-decoration: none;
+   cursor: pointer;
    transition: background-color .3s linear .3s;
 }
 .button:hover {
@@ -31,6 +32,7 @@
    font-family: "Inter";
    font-size: 22px;
    line-height: 24.42px;
+   cursor: pointer;
    transition: background-color .3s linear .3s;
 }
  

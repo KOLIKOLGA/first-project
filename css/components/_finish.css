@@ -1,0 +1,43 @@
+.finish {
+   display: none;
+}
+.finish__title {
+   font-family: "Inter";
+   font-size: 50px;
+   line-height: 1.1;
+   margin-bottom: 0;
+   margin-top: 40px;
+   color: #051655;
+}
+.finish__subtitle {
+   font-family: "Inter";
+   font-size: 20px;
+   color: #747887;
+   margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    height: auto;
+    line-height: 23px;
+    max-width: 600px;
+}
+.finish__item_title {
+   font-family: "Inter";
+   font-size: 25px;
+   line-height: 1.2;
+   color: #051655;
+   margin-top: 40px;
+   margin-bottom: 20px;
+}
+.finish__logo {
+   margin-top: 30px;
+}
+.finish__btn {
+   gap: 10px;
+}
+.finish__btn::before {
+   content: "";
+   width: 24px;
+   height: 24px;
+   background-image: url(../../images/Group\ 22770.svg);
+}

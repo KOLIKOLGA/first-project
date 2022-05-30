@@ -1,10 +1,5 @@
 const checkbox = () => {
 
-   const checkboxSpan = document.querySelectorAll('.checkbox__span');
-   const checkboxButton = document.querySelectorAll('input[type="checkbox"]');
-   const checkBox = document.getElementById('input[type="checkbox"]');
-
-
    let f = document;
    f.onchange = () => {
       let n = f.querySelectorAll('[type="checkbox"]'),

@@ -1,12 +1,4 @@
 
-
-
-
-
-
-
-
-
 .step__numbers{
    display: flex;
    justify-content: space-between;
@@ -23,9 +15,22 @@
    width: 50px;
    height: 50px;
    border: 2px solid #B3B4BA;
-   /* margin-right: 100px; */
+  
    background-color: #ffffff;
    flex-shrink: 0;
+   
+}
+.step__number.active__namber {
+   background-color: #EB3D35;
+   border: transparent;
+   transition: 1.3s all ease;
+}
+.step__number.active__namber svg > path {
+   fill: #fff;
+   transition: 1.3s all ease;
+}
+.step__number._active {
+   display: flex;
 }
 .step__progress{
    position: absolute;
@@ -35,5 +40,14 @@
    height: 2px;
    background-color: #B3B4BA;
    z-index: -1;
-   
+  
+}
+.step__progress_success {
+  
+   position: absolute;
+   left: 0;
+   top: 0;
+   height: 4px;
+   background-color: #eb3d35;
+   transition: .5s all ease;
 }
