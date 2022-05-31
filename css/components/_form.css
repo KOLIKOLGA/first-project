@@ -1,13 +1,15 @@
 .form{
    background-color: #ffffff; 
    display: flex;
-   width: 1120px;
+   max-width: 1140px;
+   width: 100vw;
  }
  .form__item{
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    width: 100%;
+    max-width: 1140px;
+    width: 100vw;
  }
 .form__button{
    margin-top: 80px;
@@ -99,6 +101,8 @@
   
 }
 .form__list{
+   max-width: 1140px;
+   width: 100vw;
    padding-top: 40px;
    padding-left: 200px;
    padding-bottom: 50px;
@@ -107,7 +111,8 @@
 }
 .form__steps{
    display: block;
-   width: 1140px;
+   max-width: 1140px;
+   width: 100vw;
 }
 .form__step {
    display: none;
@@ -126,7 +131,8 @@
    display: flex;
    flex-wrap: wrap;
    gap: 10px;
-   width: 100%;
+   max-width: 920px;
+   width: 100vw;
 }
 .form__input-input {
    display: flex;
@@ -156,7 +162,8 @@
    border: 1px solid #EB3D35; 
 }
 .form__input-max {
-   width: 930px;
+   max-width: 930px;
+   width: 100vw;
    height: 240px;
    order: 3;
    display: flex;
@@ -170,10 +177,16 @@
    border: 1px solid #EB3D35;
 }
 .form__input-text {
-   width: 930px;
+   max-width: 930px;
+   width: 100vw;
    height: 230px;
    border: 0;
    padding: 20px 30px;
    font-family: "Inter";
    font-size: 18px;
+}
+.form-input__container {
+   display: flex;
+   flex-wrap: nowrap;
+   gap: 10px;
 }

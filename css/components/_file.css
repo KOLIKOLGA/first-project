@@ -1,11 +1,13 @@
 .file__upload {
    display: flex;
-   max-width: 1120px;
-   width: 100%;
-   flex-wrap: wrap;
+   max-width: 1140px;
+   width: 100vw;
+  
    justify-content: flex-start;
 }
-
+.file__upload_item {
+   max-width: 50%;
+}
 .file__item{
    display: flex;
    width: 360px;
